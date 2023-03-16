@@ -2,12 +2,95 @@
     margin: 0;
     padding: 0;
 }
-
-.background-box{
+/*Container principal do Grid*/
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     background-color: #FA7376;
 }
-/*Futuro grid para divisão e responsividade*/
+/*Grid para divisão*/
 .grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 5px;
+}
+/*Caixas de informações*/
+.box-left{
+    margin-left: 25%;
+    width: 600px;
+    height: 300px;
+}
+.box-right{
+    box-shadow: 4px 4px 4px;
+    border-radius: 20px;
+    padding: 50px;
+    width: 500px;
+    height: 400px;  
+    background-color: #ffffff;
+}
+h1{
+   
+    font-size: 50px;
+    font: bold;
+    color: #ffffff;
+    padding-bottom: 30px;
+}
+p{
+    
+    font-size: 20px;
+    font: bold;
+    color: #ffffff;
+}
+.promotion-title{
+    width: 500px;
+    background-color: blue;
+    margin-bottom: 20px;
+}
+.terms-and-services{
+    text-align: center;
+}
+/* Não conseguir colocar espaçamento vertical entre os inputs sem usar <br> */
+input{
+    border-radius: 7px;
+    width: 100%;
+    padding: 20px;
+    border-width: 0.1px 0.1px 0.1px 0.1px;
+    font-size: 15px;
+    border-color: #DDDFE2;
+}
 
+form{
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+button{
+    font-weight: bold;
+    font-size: 17px;
+    color: #ffffff;
+    background-color: #37CC8A   ;
+    padding: 20px;
+    border-radius: 7px;
+    width: 540px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+button:hover{
+    cursor: pointer;
+    filter: brightness(1.1);
+}
+/* Paragrafo inferior (último) */
+.p-down{ 
+    font-size: 15px;
+    color: #86868a;
+}
+.terms-style{
+    text-decoration: none;
+    color: red;
 }
