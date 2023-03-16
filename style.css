@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.background-box{
+    height: 100vh;
+    background-color: #FA7376;
+}
+/*Futuro grid para divisão e responsividade*/
+.grid{
+
+}
