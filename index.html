@@ -9,21 +9,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="background-box grid">
-
-        <div class="box-left"> <!--Textos informativos da esquerda-->
+    <div class="container grid">
+        <!--Textos informativos da esquerda-->
+        <div class="box-left"> 
             <section class="left-text">
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate!</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia iste, ipsam corrupti modi voluptates itaque voluptatum eaque deserunt quisquam architecto reprehenderit praesentium aliquid perferendis.</p>
+                <h1>Registro    </h1>
+                <p>See how experienced developers solve problems in real-time. <br>
+                    Watching scripted tutorials is great, but understanding how <br> 
+                    developers think is invaluable. 
+                </p>
             </section>
         </div>
-
-        <section class="right-text"> <!--Textos informativos da direita-->>
-            <p>Lorem ipsum dolor sit amet consectetur!</p>
-        </section>
-
-        <div class="box-right"> <!--Caixa do form com inputs, button e span-->
-            <form>
+        
+        <div class="box-right">
+            <!--Textos informativos da direita-->
+            <div class="promotion-title">
+                <section class="right-text"> 
+                    <p>Try it free 7 days then &dollar;20/mon. thereafter</p> <!--Não consegui posicionar essa section acima do box-right e do form -->
+                </section>
+            </div> 
+            <!--Caixa do form com inputs, button e span-->
+            <form> 
             
                 <input type="text" placeholder="First Name">
                 <input type="text" placeholder="Last Name">
@@ -31,16 +37,15 @@
                 <input type="password" placeholder="Password">
 
                 <button type="submit">Claim your free trial</button>
-
-                <span class="terms-and-services">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                </span>
                 
+                <div class="terms-and-services">
+                    <p class="p-down">By clicking the button, you are agreeing to our <a class="terms-style" href="#">Terms and Services</a></p>
+                </div>
             </form>
+            
         </div>
-
     </div>
-</body>
+</body>     
 
 <script src="./registro.js"></script>
 <script src="./index.js"></script>
