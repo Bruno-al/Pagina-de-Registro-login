@@ -1,10 +1,27 @@
 const users = [
     {
         firstname: "Melissa",
-        lastname: "Gabriel"
+        lastname: "Andrade",
+        email: "Melissa@gmail.com",
+        password: "Melissa"
     },
     {
-        email: "bruno@gmail.com",
-        password: "Bruno"
-    }
+        firstname: "Melissa",
+        lastname: "Andrade",
+        email: "Melissa@gmail.com",
+        password: "Melissa"
+    },
+    {
+        firstname: "Melissa",
+        lastname: "Andrade",
+        email: "Melissa@gmail.com",
+        password: "Melissa"
+    },
+    {
+        firstname: "Melissa",
+        lastname: "Andrade",
+        email: "Melissa@gmail.com",
+        password: "Melissa"
+    },
+   
 ]

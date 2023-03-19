@@ -32,18 +32,13 @@
             <div class="box-form">
                 <form>
                 
-
-                    <input type="text" placeholder="First Name" id="firstName" required>
-                    <input type="text" placeholder="Last Name" id="lastName" required>
-                    <input type="email" placeholder="Email Address" id="email" required>
-                    <input type="password" placeholder="Password" id="password" required>
-                    <button type="submit" onclick="validacion(); return false">Claim your free trial</button>
-=======
-                    <input type="text" placeholder="First Name">
-                    <input type="text" placeholder="Last Name">
-                    <input type="email" placeholder="Email Address">
-                    <input type="password" placeholder="Password">
-                    <button type="submit">Claim your free trial</button>
+                    <div class="register-login">
+                        <input type="text" placeholder="First Name" id="firstName" required>
+                        <input type="text" placeholder="Last Name" id="lastName" required>
+                        <input type="email" placeholder="Email Address" id="email" required>
+                        <input type="password" placeholder="Password" id="password" required>
+                        <button type="submit" onclick="add_new_user(users); return false">Claim your free trial</button>
+                    </div>
 
                 
                     <div class="terms-and-services">
