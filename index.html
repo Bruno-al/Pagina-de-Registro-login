@@ -1,37 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina de Registro</title>
     <link rel="shortcut icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/style.css">
+
 </head>
 <body>
-    <div class="container grid">
+    <div class="container">
         <!--Textos informativos da esquerda-->
-        <div class="box-left"> 
+        <section class="box-left"> 
             <section class="left-text">
                 <h1>Registro</h1>
-                <p>See how experienced developers solve problems in real-time. <br>
-                    Watching scripted tutorials is great, but understanding how <br> 
+                <p>See how experienced developers solve problems in real-time. 
+                    Watching scripted tutorials is great, but understanding how 
                     developers think is invaluable. 
                 </p>
             </section>
-        </div>
+        </section>
         
-        <div class="box-right">
+        <section class="box-right">
             <!--Textos informativos da direita-->
         <div class="box-right-content">
-            <section class="right-text"> 
-                <p class="promotion-text"><small>Try it free 7 days then</small> &dollar;20/mon. thereafter</p> <!--Não consegui posicionar essa section acima do box-right e do form -->
-            </section>
+            <div class="right-text"> 
+                <p class="promotion-text"><small>Try it free 7 days then</small> &dollar;20/mon. thereafter</p> 
+            </div>
             
             <!--Caixa do form com inputs, button e span-->
             <div class="box-form">
                 <form>
-                
                     <div class="register-login">
                         <input type="text" placeholder="First Name" id="firstName" required>
                         <input type="text" placeholder="Last Name" id="lastName" required>
@@ -39,18 +41,16 @@
                         <input type="password" placeholder="Password" id="password" required>
                         <button type="submit" onclick="add_new_user(users); return false">Claim your free trial</button>
                     </div>
-
-                
                     <div class="terms-and-services">
-                        <p class="p-down">By clicking the button, you are agreeing to our <a class="terms-style" href="#">Terms and Services</a></p>
+                        <p>By clicking the button, you are agreeing to our <a class="terms-style" href="#">Terms and Services</a></p>
                     </div>
                 </form>
             </div>
         </div> 
-        </div>
+        </section>
     </div>
 </body>     
 
-<script src="./index.js"></script>
-<script src="./registro.js"></script>
+<script src="/script/index.js"></script>
+<script src="./script/registro.js"></script>
 </html>
