@@ -1,50 +1,54 @@
-@media (min-width: 768px){
+@media(min-width: 700px){
     .container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        background-color: #ff7978;
-        background-image: url(./src/img/bg-intro-desktop.png);
-        height: 100vh;
+        flex-direction: row;
+        padding: 3rem 4rem;
+        gap: 5rem;
     }
     .box-left{
-        width: 90%;
+        width: 40%;
+        text-align:left;
     }
     .box-left h1{
-        text-align: center;
+        font-size: 3rem;
+        text-align:left;
     }
     .box-left p{
-        text-align: center;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        text-align:left;
+        font-weight: 400;
     }
+    
     .box-right{
-        
+        width: 40%;
     }
+    
+    
     .promotion-text{
-        box-shadow: 3px 6px rgba(0, 0, 0, 0.383);
+        /* box-shadow: 3px 6px rgba(0, 0, 0, 0.383);
         margin-left: -16px;
         width: 75%;
         background-color: aqua;
         background-color: #5d54a3;
         padding: 1rem 3rem;
         font-size: 1.25rem;
-        border-radius: 8px;
+        border-radius: 8px; */
     }
     .form{
-        text-align: center;
+        /* text-align: center;
         flex-direction: column;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%;
+        width: 100%; */
     }
     input{
-        font-weight: bold;
+        /* font-weight: bold;
         padding: 20px;
-        width: 200px;
+        width: 200px; */
     }
     button{
-        font-weight: 600;
+        /* font-weight: 600;
         font-size: 15px;
         color: #ffffff;
         background-color: #37cc8a  ;
@@ -53,17 +57,14 @@
         border: none;
         width: 245px;
         text-transform: uppercase;
-        cursor: pointer;
+        cursor: pointer; */
     }
-    button:hover{
-        cursor: pointer;
-        filter: brightness(1.1);
-    }
-    .p-down{
+    
+    /* .p-down{
         gap: 7px;
         display: flex;
         flex-direction: column; 
         font-size: 15px;
         color: #c8c8cc;
-    }
+    } */
 }

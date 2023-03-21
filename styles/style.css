@@ -6,10 +6,6 @@ body{
     background-color: #ff7978;
     background-image: url("/src/img/bg-intro-desktop.png");
 }
-*{
-    /* margin: 0;
-    padding: 0; */
-}
 /*Container principal do Grid*/
 .container{
     padding: 3rem 0;
@@ -18,7 +14,6 @@ body{
     align-items: center;
     justify-content: center;
     gap: 3rem;
-    
     background-color: #ff7978;
     background-image: url("/src/img/bg-intro-desktop.png");
 }
@@ -31,7 +26,7 @@ body{
 .box-left h1{
     text-align: center;
     margin-bottom: 1rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 600;
     color: #ffffff;
 }
@@ -40,6 +35,7 @@ body{
     font-size: 1rem;
     font-weight: 400;
     color: #ffffff;
+    line-height: 1.5rem;
 }
 
 
@@ -82,14 +78,15 @@ body{
 /* _______________________________________________________________________________________________________ */
 .box-form{
     background-color: #ffffff;
-    padding: 1rem 0;
     border-radius: 8px;
+    padding: 1rem 0;
+    
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: rgba(0, 0, 0, 0.3)  0 4px;
+    box-shadow: rgba(0, 0, 0, 0.2)  0 7px;
 }
 .box-form form{
     width: 100%;

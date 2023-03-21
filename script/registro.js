@@ -1,11 +1,11 @@
-function add_new_user(){
+function add_new_user(lista){
     let firstName = document.getElementById('firstName').value
     let lastName = document.getElementById('lastName').value
     let email = document.getElementById('email').value
     let password = document.getElementById('password').value
 
     
-    users.push({
+    lista.push({
         firstname:firstName,
         lastname: lastName,
         email: email,
@@ -32,25 +32,26 @@ function page_login(){
     input_senha.id = "password_login"
 
     button.innerText = "Logar"
+    
 
-
-    button.addEventListener("click", ()=>{
+    button.addEventListener("click", (event)=>{
+        event.preventDefault()
         let email = document.querySelector("#email_login").value
         let password = document.querySelector("#password_login").value
         
         let user = {}
 
-        for (let i = 0; i < users.length; i++) {
+        for (let i = 0; i <= users.length; i++) {
         if(email == users[i].email && password == users[i].password){
-            user = users[i]
+            return (location.href = "./pages/home.html")
         }else if(email == "" || password == ""){
             alert("Preencha todos os campos")
         }
-
+        
 
        
     }
-    console.log(user)
+   
     if(email == user.email && password == user.password){
         return (location.href = "home.html")
     }else{
@@ -64,24 +65,4 @@ function page_login(){
 }
 
 
-function validacion(lista){
-    
-    let email = document.querySelector("#email_login").value
-    let password = document.querySelector("#password_login").value
-    
-    let obj = ""
 
-    for (let i = 0; i < array.length; i++) {
-
-    if(email == lista[0].email && password == lista[0].password){
-        obj = lista[i]
-        
-    }else if(email == "" || password == ""){
-        alert("Preencha todos os campos")
-    }
-     else{
-        alert("Login incorreto")
-    }
-    console.log(obj)
-}
-}
